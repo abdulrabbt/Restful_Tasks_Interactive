@@ -6,9 +6,6 @@
     <div *ngFor="let task of tasks; let id = index">
     	<p>{{task.title}}<button id="showbtn" (click)="infoTask(id)">SHOW</button></p>
     </div>
-    <div id="info" *ngIf="green">
-      <p>{{task?.title}}</p>
-      <p>{{task?.description}}</p>
-    </div>
+    <app-task *ngIf="selectedTask" [taskToShow]="selectedTask"></app-task>
   </div>
 </div>

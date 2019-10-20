@@ -13,7 +13,7 @@ export class AppComponent {
   tasks = [];
   task = "";
   green = false;
-
+  selectedTask;
   ngOnInit(){
     
   };
@@ -28,7 +28,6 @@ export class AppComponent {
 
   infoTask(id){
     console.log(id)
-    this.task = this.tasks[id];
-    this.green = true;
+    this.selectedTask = this.tasks[id];
   }
 }
