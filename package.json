@@ -19,7 +19,7 @@
   },
   "homepage": "https://github.com/abdulrabbt/Restful_Tasks_Interactive#readme",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.18.2",
     "mongoose": "^5.7.5",
     "path": "^0.12.7"
   }
